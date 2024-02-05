@@ -10,7 +10,21 @@ on:
             - master
 
 jobs:
+      Test:
+        runs-on: ubntu-latest
+        steps:
+
+          - uses: actions/checkout@v3
+          - uses: actions/setup-node@v3
+            with:
+                node-verstion: 18
+
+          - run: npm ci
+
+          - run: npm run test:prod
+
     Deploy-Preview:
+        needs: [Test]
         runs-on: ubuntu-latest
         steps:
 
