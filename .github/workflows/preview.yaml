@@ -12,7 +12,7 @@ on:
 jobs:
 
     Test:
-        runs-on: ubntu-latest
+        runs-on: ubuntu-latest
         steps:
 
             - uses: actions/checkout@v4
@@ -23,7 +23,7 @@ jobs:
 
             - run: npm ci
 
-            - run: npm run test:prod
+            - run: npm run test: prod
 
     Deploy-Preview:
         needs: [Test]
