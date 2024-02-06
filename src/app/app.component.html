@@ -1,7 +1,7 @@
 <router-outlet></router-outlet>
 
 
-<h1 [class.text-red] = "bool">Angular latest app 16</h1>
+<h1 style="background-color: aquamarine; color: red;" [class.text-red] = "bool">Angular latest app 17</h1>
 
 <!--
 <h1 [style.color]= "bool? 'red' :'blue'"> style binding</h1>
@@ -130,12 +130,11 @@
 <br/>
 <br/>
 <input type="checkbox" id="check-one" [(ngModel)]="addBackground"><label id="check-one">Add background</label>
-
 </div>
 
  <div class="preview-are">
-<h1 ><span [class.add-background]= "addBackground" >{{PostTitle}}</span></h1>
-<p>{{PostDetails}}</p>
+<h1 style="text-align: left;" ><span  [class.add-background]= "addBackground" >{{PostTitle}}</span></h1>
+<p  style="text-align: left;">{{PostDetails}}</p>
 <img [src]="imageURL" alt="any image url"><br/>
-<a [href]="postURL" target="_blank" [style.display]= "postURL ? 'block':'none' ">Moredetails</a>
+<a [href]="postURL" target="_blank" [style.display]= "postURL ? 'block':'none' ">More details</a>
  </div>
