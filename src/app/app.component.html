@@ -1,7 +1,7 @@
 <router-outlet></router-outlet>
 
 
-<h1 style="background-color: aquamarine; color: red;" [class.text-red] = "bool">Angular latest app 17</h1>
+
 
 <!--
 <h1 [style.color]= "bool? 'red' :'blue'"> style binding</h1>
@@ -112,29 +112,3 @@
 
 
 
-
-<div class="form-area">
-<h1 style="background-color: blue; color: brown;">Post form</h1>
-<br/>
-<br/>
-<input type="text" placeholder="Title post" [(ngModel)]="PostTitle">
-<br/>
-<br/>
-<textarea type="textarea" placeholder="Post Description"  rows="4"  cols="40" [(ngModel)]="PostDetails"></textarea>
-<br/>
-<br/>
-<input type="url" placeholder="post img URL" [(ngModel)]="imageURL">
-<br/>
-<br/>
-<input type="url" placeholder="post URL link" [(ngModel)]="postURL">
-<br/>
-<br/>
-<input type="checkbox" id="check-one" [(ngModel)]="addBackground"><label id="check-one">Add background</label>
-</div>
-
- <div class="preview-are">
-<h1 style="text-align: left;" ><span  [class.add-background]= "addBackground" >{{PostTitle}}</span></h1>
-<p  style="text-align: left;">{{PostDetails}}</p>
-<img [src]="imageURL" alt="any image url"><br/>
-<a [href]="postURL" target="_blank" [style.display]= "postURL ? 'block':'none' ">More details</a>
- </div>

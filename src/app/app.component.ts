@@ -6,8 +6,8 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-class';
-  bool:boolean = false;
+ title = 'angular-class';
+ bool:boolean = false;
 
 
 
@@ -85,11 +85,11 @@ value: string = 'Joe';
 imageToShow: any;
 */
 
-
+/*
 PostTitle:string;
 PostDetails:string;
 imageURL:string;
 postURL:string;
 addBackground:boolean;
-
+*/
 }
